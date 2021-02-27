@@ -21,7 +21,8 @@ int main(int, char**){
   }
   
   cv::imshow("janela", image);  
-  cv::waitKey();
+  cv::waitKey(0);
+  //cv::waitKey();
 
   image= cv::imread("bolhas.png",cv::IMREAD_COLOR);
 
@@ -36,6 +37,7 @@ int main(int, char**){
   }
 
   cv::imshow("janela", image);  
-  cv::waitKey();
+  cv::waitKey(0);
+  //cv::waitKey(-1);
   return 0;
 }
