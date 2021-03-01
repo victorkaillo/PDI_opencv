@@ -27,8 +27,8 @@ int main(int, char**){
   image= cv::imread("bolhas.png",cv::IMREAD_COLOR);
 
   val[0] = 0;   //B
-  val[1] = 0;   //G
-  val[2] = 255; //R
+  val[1] = 255;   //G
+  val[2] = 0; //R
   
   for(int i=200;i<210;i++){
     for(int j=10;j<200;j++){
