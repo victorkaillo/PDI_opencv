@@ -42,6 +42,7 @@ int main(int argc, char** argv){
   cv::imshow("image", image);
   cv::imshow("realce", realce);
   cv::imwrite("labeling.png", image);
+  cv::imwrite("labeling_realce.png", realce);
   cv::waitKey();
   return 0;
 }
