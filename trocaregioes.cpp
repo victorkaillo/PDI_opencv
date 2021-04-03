@@ -4,15 +4,15 @@
 using namespace cv;
 using namespace std;
 
-int main(int, char**){
+int main(int argr, char** argv){
   cv::Mat image;
   cv::Mat imagetroc;
 
-  image= cv::imread("biel.png",cv::IMREAD_GRAYSCALE);
-  imagetroc= cv::imread("biel.png",cv::IMREAD_GRAYSCALE);
+  image= cv::imread(argv[1],cv::IMREAD_GRAYSCALE);
+  imagetroc= cv::imread(argv[1],cv::IMREAD_GRAYSCALE);
 
   if(!image.data)
-    std::cout << "nao abriu bolhas.png" << std::endl;
+    std::cout << "nao consegui abrir a imagem" << std::endl;
 
   cv::namedWindow("janela", cv::WINDOW_AUTOSIZE);
 

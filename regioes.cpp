@@ -4,11 +4,11 @@
 using namespace cv;
 using namespace std;
 
-int main(int, char**){
+int main(int argc, char** argv){
   cv::Mat image;
   cv::Vec3b val;
 
-  image= cv::imread("kaillo.png",cv::IMREAD_GRAYSCALE);
+  image= cv::imread(argv[1],cv::IMREAD_GRAYSCALE);
   if(!image.data)
     std::cout << "nao abriu bolhas.png" << std::endl;
 
