@@ -19,12 +19,12 @@ void on_trackbar_canny(int, void*){
 int main(int argc, char**argv){
   int width, height;
 
-  image= imread(argv[1],CV_LOAD_IMAGE_GRAYSCALE);
+  image= imread(argv[1],cv::IMREAD_GRAYSCALE);
   
   width=image.size().width;
   height=image.size().height;
 
-  sprintf( TrackbarName, "Threshold inferior", top_slider_max );
+  sprintf( TrackbarName, "thresholdinferior", top_slider_max);
 
   namedWindow("canny",1);
   createTrackbar( TrackbarName, "canny",
